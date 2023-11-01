@@ -47,7 +47,7 @@ const ImageCard: FC<ImageCardType> = ({
           }`}
         >
           <input
-            id="selectedImage"
+            id={`selectedImage-${item.name}`}
             name="selectedImage"
             type="checkbox"
             checked={isAvailableSelected(item)}
