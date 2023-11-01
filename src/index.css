@@ -16,9 +16,9 @@
     @apply border-dashed flex flex-col justify-center items-center gap-2 w-[175px] h-[175px];
   }
   .onhover {
-    @apply transition-all duration-300 delay-150 brightness-50 bg-slate-100;
+    @apply transition ease-in-out delay-150 brightness-50 bg-slate-100 duration-300;
   }
   .selected {
-    @apply border bg-slate-100 brightness-75 opacity-75;
+    @apply border bg-slate-100 brightness-75 opacity-75 transition ease-in-out delay-150 duration-300;
   }
 }
