@@ -15,7 +15,7 @@
 - Select/Unselect Multiple Image
 - Deleting Multiple Images
 - Add a Feature Image Slot
-- 93+ Performance, 100% Accessibility, 100% Best Practives, 100% SEO
+- 97+ Performance, 100% Accessibility, 100% Best Practives, 100% SEO
 
 ## Lighthouse Report
 
