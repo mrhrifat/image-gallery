@@ -18,9 +18,7 @@ import { GridItem, GridItemArr } from "./utils/type";
 const App = () => {
   const [gridItem, setGridItem] = useState<GridItemArr>(gridItemData);
   const [selected, setSelected] = useState<GridItemArr>([]);
-  const [, setDragImgName] = useState<number>();
   const [dragImgSrc, setDragImgSrc] = useState<string>("");
-  const [, setDropImgSrc] = useState<string>("");
 
   //  Is selected item is available or not
   const isAvailableSelected = (item: GridItem) => selected.includes(item);
@@ -28,12 +26,11 @@ const App = () => {
   // Item Drop on new place
   const dropItem = (event: DragEvent<HTMLDivElement>, item: GridItem) => {
     event.preventDefault();
-    const tempDropImg = item.url;
+    const { url: tempDropImg } = item;
     const tempDragImg = dragImgSrc;
-    setDropImgSrc(item.url);
 
-    setGridItem((prevArr: GridItemArr) => {
-      return prevArr.map((el) => {
+    setGridItem((prevGridItem: GridItemArr) => {
+      return prevGridItem.map((el) => {
         if (el.url === tempDropImg) return { ...el, url: tempDragImg };
         if (el.url === tempDragImg) return { ...el, url: tempDropImg };
         return el;
@@ -42,10 +39,7 @@ const App = () => {
   };
 
   // Item Drag from it's place
-  const dragItem = (item: GridItem) => {
-    setDragImgName(item.id);
-    setDragImgSrc(item.url);
-  };
+  const dragItem = (item: GridItem) => setDragImgSrc(item.url);
 
   // Toggle Selected & Unselected
   const handleSelected = (item: GridItem) => {
@@ -60,8 +54,8 @@ const App = () => {
 
   // Delete Selected Item
   const handleDelete = () => {
-    setGridItem((prevState) =>
-      prevState.filter((item) => !isAvailableSelected(item))
+    setGridItem((prevGridItem) =>
+      prevGridItem.filter((item) => !isAvailableSelected(item))
     );
     setSelected([]);
   };
