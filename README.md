@@ -20,7 +20,7 @@
 ## Lighthouse Report
 
 <div align='center'>
-  <img src='https://github.com/mrhrifat/image-gallery/assets/45077312/7c7d5273-b998-42a3-93b8-b3613d3a24a1'/>
+  <img src='https://github.com/mrhrifat/image-gallery/assets/45077312/13fc767c-f58f-4574-bbfe-d7c393de26e7'/>
 </div>
 
 ## Development & Testing
