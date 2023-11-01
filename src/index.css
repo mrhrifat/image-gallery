@@ -7,7 +7,7 @@
     @apply border shadow-md rounded-md border-slate-300 cursor-pointer;
   }
   .featured {
-    @apply row-start-1 row-end-3 row-span-2 sm:col-span-2 md:w-[362px] h-[366px];
+    @apply row-span-2 sm:col-span-2 md:w-[362px] h-[366px];
   }
   .normal {
     @apply w-[175px] h-[175px];
