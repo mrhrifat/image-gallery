@@ -14,7 +14,7 @@ import { HeaderType } from "../utils/type";
 
 const Header: FC<HeaderType> = ({ selected, handleDelete }) => {
   return (
-    <div className="flex flex-row justify-between border-b border-slate-600 pb-3">
+    <div className="flex flex-row justify-between border-b border-slate-400 pb-3">
       {selected === 0 ? (
         <h2 className="text-xl">Gallery</h2>
       ) : (
