@@ -17,6 +17,12 @@
 - Add a Feature Image Slot
 - 93+ Performance, 100% Accessibility, 100% Best Practives, 100% SEO
 
+## Lighthouse Report
+
+<div align='center'>
+  <img src='https://github.com/mrhrifat/image-gallery/assets/45077312/7c7d5273-b998-42a3-93b8-b3613d3a24a1'/>
+</div>
+
 ## Development & Testing
 
 If you are exiting & see how it works in local development machine
