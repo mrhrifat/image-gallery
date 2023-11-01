@@ -6,7 +6,7 @@
 
 ## Live
 
--
+- [Image Gallery](https://imagegalleryreact.vercel.app)
 
 ## Features
 
@@ -15,6 +15,7 @@
 - Select/Unselect Multiple Image
 - Deleting Multiple Images
 - Add a Feature Image Slot
+- 90+ Performance, 100% Accessibility, 100% Best Practives, 100% SEO
 
 ## Development & Testing
 
