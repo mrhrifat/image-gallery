@@ -38,9 +38,7 @@ const ImageCard: FC<ImageCardType> = ({
         <img
           src={item.url}
           alt={item.name}
-          className={`rounded-md ${
-            id === 0 ? "md:w-[362px] h-[364px]" : "md:w-[175px] h-[173px]"
-          }`}
+          className={`rounded-md ${id === 0 && "max-md:h-[364px]"}`}
         />
 
         <div
