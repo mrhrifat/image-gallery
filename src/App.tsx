@@ -67,8 +67,8 @@ const App = () => {
   };
 
   return (
-    <div className="container mx-auto py-8 max-sm:py-4">
-      <div className="flex flex-col gap-4 justify-center p-2 border border-slate-600 rounded-md">
+    <div className="container mx-auto p-8 max-sm:py-4">
+      <div className="flex flex-col gap-4 justify-center p-2 border border-slate-400 rounded-md">
         <Header selected={selected.length} handleDelete={handleDelete} />
 
         <div className="flex flex-row justify-center">
