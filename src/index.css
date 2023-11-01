@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .image-card {
+    @apply border shadow-md rounded-md border-slate-300 cursor-pointer;
+  }
+  .featured {
+    @apply row-start-1 row-end-3 row-span-2 sm:col-span-2 md:w-[362px] h-[366px];
+  }
+  .normal {
+    @apply w-[175px] h-[175px];
+  }
+  .add-image {
+    @apply border-dashed flex flex-col justify-center items-center gap-2 w-[175px] h-[175px];
+  }
+  .onhover {
+    @apply transition-all duration-300 delay-150 brightness-50 bg-slate-100;
+  }
+  .selected {
+    @apply border bg-slate-100 brightness-75 opacity-75;
+  }
+}
