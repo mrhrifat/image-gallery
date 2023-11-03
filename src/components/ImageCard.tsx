@@ -23,7 +23,6 @@ const ImageCard: FC<ImageCardType> = ({
   return (
     <div
       key={item.url}
-      onDragOver={(event) => event.preventDefault()}
       onDrop={(event) => dropItem(event, item)}
       onClick={() => handleSelected(item)}
       className={`image-card ${id === 0 ? "featured" : "normal"} ${
@@ -33,7 +32,15 @@ const ImageCard: FC<ImageCardType> = ({
       <div
         className="relative"
         draggable={true}
+        onDragOver={(e) => {
+          e.preventDefault();
+          e.currentTarget.classList.add("dragging");
+        }}
         onDragStart={() => dragItem(item)}
+        onDragLeaveCapture={(e) => {
+          e.preventDefault();
+          e.currentTarget.classList.remove("dragging");
+        }}
       >
         <img
           src={item.url}
