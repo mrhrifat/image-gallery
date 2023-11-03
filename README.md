@@ -15,12 +15,12 @@
 - Select/Unselect Multiple Image
 - Deleting Multiple Images
 - Add a Feature Image Slot
-- 97+ Performance, 100% Accessibility, 100% Best Practives, 100% SEO
+- 100 Performance, 100% Accessibility, 100% Best Practives, 100% SEO
 
 ## Lighthouse Report
 
 <div align='center'>
-  <img src='https://github.com/mrhrifat/image-gallery/assets/45077312/13fc767c-f58f-4574-bbfe-d7c393de26e7'/>
+  <img src='https://github.com/mrhrifat/image-gallery/assets/45077312/6b132a8a-30db-4a81-ae8a-39870f35689c'/>
 </div>
 
 ## Development & Testing
