@@ -21,4 +21,7 @@
   .selected {
     @apply border bg-slate-100 brightness-75 opacity-75 transition ease-in-out delay-150 duration-300;
   }
+  .dragging {
+    @apply border-slate-200 rounded-md shadow-md bg-slate-300 brightness-50 transition ease-in delay-150;
+  }
 }
